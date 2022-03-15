@@ -12,10 +12,22 @@
 <body>
   <div id="board">
     <div id="background">
+      <div class="scoreContainer">
+        Score: <span id="score">0</span>
+      </div>
     </div>
+
     <div id="player">
       <img src="./assets/vector-player-cat.png" alt="player cat">
     </div>
+
+    <div id="cactus" class="cactusMovement">
+      <img src="./assets/cactus.png" alt="cactus">
+    </div>
+  </div>
+  <div class="menu">
+    <button id="buttonPlayerStop" class="button play"></button>
+    <button id="restartGame">Restart Game</button>
 
   </div>
   <script src="./script.js"></script>

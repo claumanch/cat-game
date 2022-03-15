@@ -10,10 +10,10 @@ body {
 }
 
 #player {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   position: absolute;
-  bottom: 175px;
+  bottom: 160px;
   left: 70px;
 }
 
@@ -59,4 +59,66 @@ body {
   100%{
     background-position: -9000px 0;
   }
+}
+
+#cactus {
+  position: absolute;
+  width: 100px;
+  height: 120px;
+  bottom: 150px;
+  right: 0;
+}
+
+.cactusMovement {
+  animation: cactusMove 4s linear infinite;
+}
+
+#cactus img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@keyframes cactusMove {
+  0%{
+    right: 0%;
+  }
+  100%{
+    right: 100%;
+  }
+
+}
+
+.scoreContainer{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.button.play {
+  border-style: solid;
+  border-width: 37px 0 37px 60px;
+}
+
+.button {
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+  border-color:  transparent transparent transparent #202020;
+  transition: 200ms all ease;
+  cursor: pointer;
+  border-style: double;
+  border-width: 0 0 0 60px;
+}
+
+.button:hover {
+  border-color: transparent transparent transparent #404040;
+}
+
+
+.menu {
+  display: flex;
+  justify-content: center;
 }
